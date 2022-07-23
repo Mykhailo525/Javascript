@@ -59,9 +59,8 @@ let firstName = 'Mukhailo';
 let middleName = 'Andriovych';
 let lastName = 'Tryndiak';
 
-let person = `${firstName} + ' '${middleName} + ' '${lastName}`;
+let person = `${firstName} ${middleName} ${lastName}`;
 console.log(person);
-console.log(firstName + middleName + lastName);
 
 let a = 100;
 console.log(typeof a)
