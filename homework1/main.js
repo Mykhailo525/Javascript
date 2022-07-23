@@ -55,11 +55,11 @@ alert(p);
 document.write(one + ' ', two + ' ', three + ' ', d + ' ', e + ' ', f + ' ', g + ' ', h + ' ', i + ' ', l + ' ', m + ' ', n + ' ', p + ' ');
 
 
-let firstName = 'Mukhailo ';
-let middleName = 'Andriovych ';
+let firstName = 'Mukhailo';
+let middleName = 'Andriovych';
 let lastName = 'Tryndiak';
 
-let person = `${firstName}${middleName}${lastName}`;
+let person = `${firstName} + ' '${middleName} + ' '${lastName}`;
 console.log(person);
 console.log(firstName + middleName + lastName);
 
@@ -71,7 +71,8 @@ let c = true;
 console.log(typeof c)
 
 let name = prompt('Write your name');
-let middlename = prompt('Write your middleame');
-console.log('My name is '+ name +' '+ middlename);
+console.log(name);
+let middlename = prompt('Write your middlename');
+console.log(middlename);
 let age = prompt('Write your age');
-console.log('I am ' + age);
+console.log(age);
