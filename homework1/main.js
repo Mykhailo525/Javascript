@@ -73,5 +73,5 @@ let name = prompt('Write your name');
 console.log(name);
 let middlename = prompt('Write your middlename');
 console.log(middlename);
-let age = prompt('Write your age');
-console.log(age);
+let age = +prompt('Write your age');
+console.log(typeof age);
