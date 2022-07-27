@@ -12,26 +12,26 @@ console.log(arr[9]);
 
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
 
-let Rowling = {
+let rowling = {
     title: 'Harry Potter',
     pageCount: 200,
     genre: ' fantasy'
 }
-console.log(Rowling);
+console.log(rowling);
 
-let Covey = {
+let covey = {
     title: 'The 7 Habits of Highly Effective People',
     pageCount: 381,
     genre: 'Self-help'
 }
-console.log(Covey);
+console.log(covey);
 
-let Kiyosaki = {
+let kiyosaki = {
     title: 'Rich Dad Poor Dad',
     pageCount: 409,
     genre: 'Personal finance'
 }
-console.log(Kiyosaki);
+console.log(kiyosaki);
 
 
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - масив.
@@ -41,7 +41,12 @@ let first = {
     title: 'I Feel Bad About My Neck',
     pageCount: 322,
     genre: 'Self-help',
-    author:['NoraEphron', 40]
+    author:[
+    {
+    name:'NoraEphron',
+     age:40
+    }
+]
 }
 console.log(first);
 
@@ -49,7 +54,12 @@ let second = {
     title: 'Broken Glass',
     pageCount: 109,
     genre: 'Personal finance',
-    author:['AlainMabanckou',37]
+    author:[
+        {
+            name:'regerger',
+            age:40
+        }
+    ]
 }
 console.log(second);
 
@@ -57,7 +67,12 @@ let third = {
     title: 'Darkmans',
     pageCount: 443,
     genre: 'Personal finance',
-    author:['NicolaBarker',57]
+    author:[
+        {
+            name:'erhgreg',
+            age:45
+        }
+    ]
 }
 console.log(third);
 
