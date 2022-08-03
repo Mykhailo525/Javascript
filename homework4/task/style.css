@@ -1,0 +1,24 @@
+.onefour{
+display: flex;
+    justify-content: space-around;
+}
+p{
+    font-size: 30px;
+}
+
+img{
+    width: 300px;
+    height: 350px;
+}
+
+.sixth{
+    display: flex;
+    justify-content: space-around;
+    background-color: deepskyblue;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
