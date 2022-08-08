@@ -1,10 +1,10 @@
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
 /////////перший спосіб
-// function square(a,b){
-//     let res=a*b;
-//     return res;
-// }
-// console.log(square(10, 20));
+function square(a,b){
+    let res=a*b;
+
+}
+console.log(square(10, 20));
 /////////другий спосіб
 // let square=(a,b) => a*b;
 // console.log(square(10, 20));
@@ -72,6 +72,7 @@
 // makeList(txt,6)
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+//////////////////////1var
 // let arr = ['one', 2, 3, false, true,'two','three',true,25,-120];
 // function makeList(array){
 //     document.write(`<ul>`)
@@ -82,6 +83,17 @@
 // }
 //
 // makeList(arr)
+///////////////////2 var
+// function makeList(...array){
+//     document.write(`<ul>`)
+//     for (const arrayElement of array) {
+//         document.write(`<li>${arrayElement}</li>`)
+//     }
+//     document.write(`</ul>`)
+// }
+//
+// makeList('one', 2, 3, false, true,'two','three',true,25,-120)
+
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
 // Для кожного об'єкту окремий блок.
