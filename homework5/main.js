@@ -1,10 +1,9 @@
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
 /////////перший спосіб
-function square(a,b){
-    let res=a*b;
-
-}
-console.log(square(10, 20));
+// function square(a,b){
+//     let res=a*b;
+// }
+// console.log(square(10, 20));
 /////////другий спосіб
 // let square=(a,b) => a*b;
 // console.log(square(10, 20));
@@ -94,7 +93,6 @@ console.log(square(10, 20));
 //
 // makeList('one', 2, 3, false, true,'two','three',true,25,-120)
 
-
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
 // Для кожного об'єкту окремий блок.
 // let products = [
@@ -127,14 +125,15 @@ console.log(square(10, 20));
 // makeDocument(products)
 
 // - створити функцію яка повертає найменьше число з масиву
-// let arr=[ 10, 20, 3, 5, 7, 2, 56, 8, 67,10 ];
+// let arr=[ 10, 20, 3, 5, 1, 2, 56, 8, 67,10 ];
+// let min=arr[0]
 // function minNumber(array){
 // for (let i = 0; i < array.length; i++) {
-//     if (array[i] < array[0]) {
-//         array[0] = array[i];
+//     if (array[i] < min) {
+//         min = array[i];
 //     }
 //  }
-// return array[0]
+// return min
 // }
 // let x=minNumber(arr);
 // console.log(x)
