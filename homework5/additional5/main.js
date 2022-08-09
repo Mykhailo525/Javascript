@@ -64,7 +64,7 @@
 
 // - Дано натуральное число n. Выведите все числа от 1 до n.
 // function numbers(n){
-//     for (i=1;i<=n;i++){
+//     for (let i=1;i<=n;i++){
 //         console.log(i)
 //     }
 // }
@@ -74,11 +74,11 @@
 // если A < B, или в порядке убывания в противном случае.
 // function numbers(a,b){
 //     if(a<b){
-//         for(i=a;i<=b;i++){
+//         for(let i=a;i<=b;i++){
 //             console.log(i)
 //         }
 //     }else if(a>b){
-//         for(i=a;i>=b;i--){
+//         for(let i=a;i>=b;i--){
 //             console.log(i)
 //         }
 //     }
