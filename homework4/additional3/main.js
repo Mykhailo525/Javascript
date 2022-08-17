@@ -224,6 +224,13 @@ let citiesWithId = [
 //     }
 // }
 // console.log(b)
+//
+// let str=''
+// let arr=[ 'a', 'b', 'c'];
+// for (const string of arr) {
+//     str+=string
+// }
+// console.log(str)
 
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
 // let array = [ 'a', 'b', 'c'];
