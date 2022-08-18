@@ -18,11 +18,12 @@
 // arr.push(new User(45,'kl;','rhrfhjak','rndak@gmai.com',5823))
 // arr.push(new User(1000,'M,./','hrtrgukk','rrhindak@gmai.com',5823))
 // arr.push(new User(78,'zxc','fhyndiak','rndak@gmai.com',155823))
-// console.log(arr);
-// - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
+// //
+// //- Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
 // let filter=arr.filter(value => value.id%2===0);
 // console.log(filter);
-// - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
+// //
+// //- Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
 // let sort=arr.sort((a,b)=>a.id-b.id);
 // console.log(sort);
 
@@ -51,7 +52,7 @@
 // arr.push(new Client(1000,'M,./','hrtrgukk','rrhindak@gmai.com',5823,['bmn']))
 // arr.push(new Client(78,'zxc','fhyndiak','rndak@gmai.com',155823,['n,c','asd']))
 // console.log(arr);
-// - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
+// //- Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
 // let sort=arr.sort((a,b)=>a.order.length-b.order.length);
 // console.log(sort);
 
@@ -160,50 +161,50 @@
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
-// function Popelushka(name,age,footSize){
-//     this.name=name;
-//     this.age=age;
-//     this.footSize=footSize;
-// }
-//
-// let arr=[];
-// arr.push(new Popelushka('qwe',24,10))
-// arr.push(new Popelushka('rty',14,11))
-// arr.push(new Popelushka('uio',54,12))
-// arr.push(new Popelushka('opl',67,13))
-// arr.push(new Popelushka('asd',23,14))
-// arr.push(new Popelushka('fge',12,15))
-// arr.push(new Popelushka('zxc',78,16))
-// arr.push(new Popelushka('vbn',90,17))
-// arr.push(new Popelushka('bnm',22,18))
-// arr.push(new Popelushka('hjk',33,19))
-//
-// console.log(arr);
-//
-//
-// class Prince{
-//     constructor(name,age,size) {
-//         this.name=name;
-//         this.age=age;
-//         this.size=size;
-//     }
-// }
-//
-// let prince=new Prince('mukhailo',48,16)
-//
-// function findPopelushka(array){
-//     for (const arrayElement of array) {
-//         if(arrayElement.footSize===prince.size){
-//             console.log(arrayElement)
-//         }
-//     }
-// }
-// findPopelushka(arr)
-//
-// let findPopelushka2=function (object){
-//    if(object.footSize===prince.size){
-//        console.log(object)
-//    }
-// }
-// arr.find(findPopelushka2)
+function Popelushka(name,age,footSize){
+    this.name=name;
+    this.age=age;
+    this.footSize=footSize;
+}
+
+let arr=[];
+arr.push(new Popelushka('qwe',24,10))
+arr.push(new Popelushka('rty',14,11))
+arr.push(new Popelushka('uio',54,12))
+arr.push(new Popelushka('opl',67,13))
+arr.push(new Popelushka('asd',23,14))
+arr.push(new Popelushka('fge',12,15))
+arr.push(new Popelushka('zxc',78,16))
+arr.push(new Popelushka('vbn',90,17))
+arr.push(new Popelushka('bnm',22,18))
+arr.push(new Popelushka('hjk',33,19))
+
+console.log(arr);
+
+
+class Prince{
+    constructor(name,age,size) {
+        this.name=name;
+        this.age=age;
+        this.size=size;
+    }
+}
+
+let prince=new Prince('mukhailo',48,16)
+
+function findPopelushka(array){
+    for (const arrayElement of array) {
+        if(arrayElement.footSize===prince.size){
+            console.log(arrayElement)
+        }
+    }
+}
+findPopelushka(arr)
+
+let findPopelushka2=function (object){
+   if(object.footSize===prince.size){
+       console.log(object)
+   }
+}
+arr.find(findPopelushka2)
 

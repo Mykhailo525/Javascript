@@ -22,6 +22,7 @@
 // - Напишіть функцію insert_dash(str), яка приймає рядок str як аргумент і вставляє тире (-) між словами.
 //     При цьому всі символи рядка необхідно перевести у верхній регістр.
 //     let str = "HTML JavaScript PHP";
+//
 // document.writeln(insert_dash(str)); // 'HTML-JAVASCRIPT-PHP'
 // let insert_dash=(str)=>{
 //     return str.toUpperCase().replaceAll(' ','-')
@@ -90,7 +91,7 @@
 // console.log(asd(0, 10));
 
 // - Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
-//  let str = 'каждый охотник желает знать';
+//  let str = 'каждый oхотник желает знать';
 //  function capitalize(str){
 // console.log(
 //     str.split(' ').map(word => word[0].toUpperCase() + word.substring(1)).join(' ')
@@ -106,8 +107,42 @@
 // someeMAIL@gmail.com
 // someeMAIL@i.ua
 // some.email@gmail.com
-
-
+//
+// let split;
+// let splitTwo;
+// function emailCheck(email){
+//  let include = email.includes('@')
+//  if (include === true) {
+//   split = email.split('@')
+//   if (split.length > 2) {
+//    console.log('неправильний email(не може бути 2 або більше знаки @)')
+//    return false
+//   }
+//  } else {
+//   console.log('пошта не містить знаку @')
+//  }
+//
+//  let includeTwo=split[1].includes('.')
+//  if(includeTwo===true){
+//   splitTwo=split[1].split('.')
+//     if(splitTwo.length>2){
+//      console.log('Неправльно(2 або більше значень . після @)')
+//      return false
+//     }
+//  }else {
+//   console.log('пошта не містить знаку . після @')
+//  }
+//
+// if(!split[0] || splitTwo[0].length<2 || !splitTwo[1]){
+//  console.log('напрвильний email')
+//  return false
+// }else{
+//  console.log('Все правильно')
+// }
+//
+// }
+//
+// emailCheck('some.email@gmail.com');
 
 // - Напишіть функцію count(str, stringsearch), яка повертає кількість символів stringsearch у рядку str.
 //     let symb = "о", str = "Астрономия это наука о небесных объектах";
@@ -135,7 +170,78 @@
 // }
 // console.log(cutString(str, 3));
 
-
+// - є масив   відсортувати його в спадаючому порядку за кількістю елементів в полі modules
+// let coursesArray = [
+//     {
+//         title: 'JavaScript Complex',
+//         monthDuration: 5,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+//     },
+//     {
+//         title: 'Java Complex',
+//         monthDuration: 6,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'git',
+//             'java core',
+//             'java advanced']
+//     },
+//     {
+//         title: 'Python Complex',
+//         monthDuration: 6,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'python core',
+//             'python advanced']
+//     },
+//     {
+//         title: 'QA Complex',
+//         monthDuration: 4,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+//     },
+//     {
+//         title: 'FullStack',
+//         monthDuration: 7,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'react',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'git',
+//             'node.js',
+//             'python',
+//             'java']
+//     },
+//     {
+//         title: 'Frontend',
+//         monthDuration: 4,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+//     }
+// ];
+// let sort =coursesArray.sort((a,b)=>b.modules.length-a.modules.length)
+//  console.log(sort);
 
 
 
