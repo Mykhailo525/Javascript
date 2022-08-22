@@ -143,6 +143,25 @@
 // }
 //
 // emailCheck('some.email@gmail.com');
+///////////////////////////////////////////////////////////
+//2 варіант
+// const checkEmail = (email) => {
+//     const emailArr = email.split('@');
+//     if (emailArr.length !==2){
+//         return false
+//     }
+//     const [name, fullDomain] = emailArr;
+//     const [beforeDot, afterDot] = fullDomain.split('.');
+//     // if (beforeDot.length<2 || !afterDot ||!name){
+//     //     return false
+//     // }
+//     // return true
+//
+//     return !(beforeDot.length < 2 || !afterDot || !name);
+//
+// }
+//
+// console.log(checkEmail('gs.s'));
 
 // - Напишіть функцію count(str, stringsearch), яка повертає кількість символів stringsearch у рядку str.
 //     let symb = "о", str = "Астрономия это наука о небесных объектах";
