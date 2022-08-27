@@ -30,10 +30,10 @@
 //             diver.classList.add('wow')
 //             div.appendChild(diver)
 //
+//
 //             if(typeof obj[Key]!=='object'){
-//                 let p1=document.createElement('p1')
-//                 p1.innerHTML=`<b>${Key}</b> - ${obj[Key]}`
-//                 div.appendChild(p1)
+//                 diver.innerHTML=`<b>${Key}</b>-${obj[Key]}`
+//
 //
 //             }else if(typeof obj[Key]==='object'){
 //                 let ul=document.createElement('ul')
@@ -42,14 +42,14 @@
 //                 }else if (Key==="company"){
 //                     ul.innerHTML=`<b>Company:</b>`;
 //                 }
-//                 div.appendChild(ul)
+//                 diver.appendChild(ul)
 //
 //                 for (const asd in obj[Key]) {
 //
 //                     if(typeof obj[Key][asd]==='object'){
 //                         let ul1=document.createElement('ul')
 //                         ul1.innerHTML=`<b>Geo:</b>`;
-//                         ul.appendChild(ul1)
+//                         diver.appendChild(ul1)
 //
 //                         for (const asdKey in obj[Key][asd]) {
 //                             let li = document.createElement('li')

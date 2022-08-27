@@ -30,7 +30,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts?id=${postId}`)
 
 
 
-fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`)
+fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`)
     .then((comments)=>comments.json())
     .then((commentar)=> {
         let divform=document.createElement('div');

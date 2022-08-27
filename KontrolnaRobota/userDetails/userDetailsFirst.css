@@ -2,20 +2,21 @@
 .block{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    margin: 5px 5px 5px 5px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    justify-content: center;
 }
-p1{
+.wow{
+    width: 24%;
+    height: 175px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5px 5px 5px 5px;
+    border: 1px solid darkslategrey;
 }
-ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
+
+
 .wrap{
     width: 100%;
     display: flex;
@@ -35,6 +36,7 @@ button{
 
 .button{
     width: 100%;
+    margin-top: 10px;
 }
 p{
     width: 18%;
