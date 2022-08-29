@@ -106,67 +106,74 @@
 // 2 варінт розвязку -
 // розкоментувати <!--    <link rel="stylesheet" href="userDetailsSecond.css">--> у файлі user_details.html
 
-// let div=document.createElement('div')
-// div.innerHTML=`<h2>Інформація про об'єкт user на який клікнули</h2>`
-// document.body.appendChild(div)
-// let url=new URL(location.href);
-// let id=url.searchParams.get('id');
-// fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
-//     .then((respon) => respon.json())
-//     .then((obj) => {
-//         let div=document.createElement('div')
-//         div.classList.add('target')
-//         document.body.appendChild(div)
-//         function explorer(object){
-//             for (const objectKey in object) {
-//               if(typeof object[objectKey]!== 'object'){
-//                   let p1=document.createElement('p1')
-//                   p1.innerHTML=`<b>${objectKey}</b> - ${object[objectKey]}`
-//                   div.appendChild(p1)
-//               }else{
-//                   explorer(object[objectKey])
-//               }
-//             }
-//         }
-//         explorer(obj)
-//     })
-//
-//
-// fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
-//     .then((posts) => posts.json())
-//     .then((users) =>{
-//         let div=document.createElement('div')
-//         div.classList.add('wrap')
-//         let button=document.createElement('button')
-//         button.innerText='Post of current user'
-//         document.body.appendChild(div)
-//         div.appendChild(button)
-//         button.onclick=function (){
-//             let div=document.createElement('div');
-//             div.innerHTML=`<h2>Тitle всіх постів поточного юзера</h2>`
-//             document.body.appendChild(div);
-//
-//             let divUser=document.createElement('div');
-//             divUser.classList.add('wrapper')
-//             document.body.appendChild(divUser);
-//
-//             for (const post of users) {
-//                 let p=document.createElement('p')
-//                 p.innerHTML=`<b> ${post.id}</b>  ${post.title}`
-//                 let btn=document.createElement('button')
-//                 btn.classList.add('button')
-//                 let a=document.createElement('a')
-//                 console.log(id)
-//                 a.href=`../postDetails/postDetails.html?id=${id}&postid=${post.id}`;
-//                 a.innerText='Перейти на сторінку post-details';
-//                 btn.appendChild(a)
-//                 p.appendChild(btn)
-//                 divUser.appendChild(p)
-//             }
-//
-//         }
-//
-//     })
+let div=document.createElement('div')
+div.innerHTML=`<h2>Інформація про об'єкт user на який клікнули</h2>`
+document.body.appendChild(div)
+let url=new URL(location.href);
+let id=url.searchParams.get('id');
+fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+    .then((respon) => respon.json())
+    .then((obj) => {
+        let div=document.createElement('div')
+        div.classList.add('target')
+        document.body.appendChild(div)
+        function explorer(object){
+            let diver=document.createElement('div')
+            diver.classList.add('father')
+            div.appendChild(diver)
+            for (const objectKey in object) {
+              if(typeof object[objectKey]!== 'object'){
+                  let p1=document.createElement('p1')
+                  p1.innerHTML=`<b>${objectKey}</b> - ${object[objectKey]}`
+                  diver.appendChild(p1)
+              }else{
+                  let div1=document.createElement('div')
+                  div1.classList.add('block')
+                  div1.innerHTML=`<b>${objectKey}:</b>`
+                  div.appendChild(div1)
+                  explorer(object[objectKey])
+              }
+            }
+        }
+        explorer(obj)
+    })
+
+
+fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
+    .then((posts) => posts.json())
+    .then((users) =>{
+        let div=document.createElement('div')
+        div.classList.add('wrap')
+        let button=document.createElement('button')
+        button.innerText='Post of current user'
+        document.body.appendChild(div)
+        div.appendChild(button)
+        button.onclick=function (){
+            let div=document.createElement('div');
+            div.innerHTML=`<h2>Тitle всіх постів поточного юзера</h2>`
+            document.body.appendChild(div);
+
+            let divUser=document.createElement('div');
+            divUser.classList.add('wrapper')
+            document.body.appendChild(divUser);
+
+            for (const post of users) {
+                let p=document.createElement('p')
+                p.innerHTML=`<b> ${post.id}</b>  ${post.title}`
+                let btn=document.createElement('button')
+                btn.classList.add('button')
+                let a=document.createElement('a')
+                console.log(id)
+                a.href=`../postDetails/postDetails.html?id=${id}&postid=${post.id}`;
+                a.innerText='Перейти на сторінку post-details';
+                btn.appendChild(a)
+                p.appendChild(btn)
+                divUser.appendChild(p)
+            }
+
+        }
+
+    })
 
 
 
